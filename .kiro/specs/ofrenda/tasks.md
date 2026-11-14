@@ -27,7 +27,7 @@ en el módulo 3 y la 2 en el módulo 4.
 
 ## Tasks
 
-- [ ] 1. Escribir el backend y mover el altar a la nube (módulo 3)
+- [x] 1. Escribir el backend y mover el altar a la nube (módulo 3)
   - Escribe `infra/ofrenda-stack.ts` siguiendo **Architecture**, **Data Models** y
     **Components and Interfaces** de `design.md`: la tabla, el bucket privado, las
     tres Lambdas con permisos acotados a sus recursos y la REST API con cuatro rutas.

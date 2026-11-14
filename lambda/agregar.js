@@ -32,7 +32,7 @@ export async function handler(event) {
 
     // Borrar elemento
     if (borrar && id) {
-      // Buscar el elemento para obtener su sk
+      // Buscar el elemento para obtener su sk (sin Limit porque Filter se aplica después)
       const resultado = await client.send(
         new QueryCommand({
           TableName: TABLA,
@@ -42,7 +42,6 @@ export async function handler(event) {
             ':altarId': altarId,
             ':id': id,
           },
-          Limit: 1,
         })
       )
 
